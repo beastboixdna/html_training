@@ -9,3 +9,5 @@ function startCounter() {
 }
 
 startCounter();
+
+//Okay
