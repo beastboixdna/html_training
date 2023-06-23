@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML JavaScript</title>
+</head>
+
+<body>
+    <h1>Here we are using simple internal JavaScript</h1>
+
+    <button id="show">Show Hidden</button>
+    <h3 id="content"></h3>
+
+
+    <script>
+        var val = 0
+        var button = document.getElementById("show");
+        var content = document.getElementById("content");
+
+        button.addEventListener("click", function (e) {
+            if (val == 0) {
+                content.innerHTML = "Hello Krishna!"
+                val = val + 1
+            }
+            else if (val == 1) {
+                content.innerHTML = "Hello Rama!"
+                val = 0
+            }
+        })
+    </script>
+</body>
+
+</html>

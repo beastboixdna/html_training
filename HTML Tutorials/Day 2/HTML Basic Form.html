@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Form</title>
+</head>
+
+<body>
+    <h2>Create a Player Jersey</h2>
+    <form method="POST" action="/person_info">
+        <p>Player Name: <input type="text" name="name" /></p>
+        <p>Password: <input type="password" name="password" /></p>
+
+        <input type="radio" name="gender" value="male" checked />Male <br />
+        <input type="radio" name="gender" value="female" />Female <br />
+        <input type="radio" name="gender" value="Other" />Other <br />
+
+        <p>Jersey Number: <input type="number" name="num" min="0" max="99" /></p>
+        <p>Jersey Color: <input type="color" name="jerseycolor" /></p>
+        <p>Birthday: <input type="date" name="bday" /></p>
+
+        <p>Position</p>
+        <div>
+            <select name="Position">
+                <option value="sf">Small Forward</option>
+                <option value="sf">Power Forward</option>
+                <option value="sf">Point Grade</option>
+                <option value="sf">Shooting Guard</option>
+                <option value="sf">Center</option>
+            </select>
+        </div>
+
+        <p>Borough</p>
+        <div>
+            <input list="borough" />
+            <datalist id="borough">
+                <option value="Manhattan"></option>
+                <option value="Brooklyn"></option>
+                <option value="Queens"></option>
+                <option value="Staten Island"></option>
+                <option value="Bronx"></option>
+            </datalist>
+        </div>
+
+        <p>Biography</p>
+        <textarea name="message" cols="30" rows="10"></textarea>
+        <input type="submit" id="submit" />
+        <input type="reset" />
+    </form>
+    <script></script>
+</body>
+
+</html>

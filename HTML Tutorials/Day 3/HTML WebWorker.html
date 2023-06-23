@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML WEb Worker</title>
+    <style>
+        button:first-child {
+            margin-right: 10px;
+        }
+
+        button:nth-child(2) {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+        var w;
+        function startC() {
+            if (typeof (Worker) !== "undefined") {
+                if (typeof (W) == "undefined") {
+                    w = new Worker("simple_worker.js");
+                }
+
+                w.onmessage = function (e) {
+                    document.getElementById("count").innerHTML = e.data;
+                }
+            }
+            else {
+                alert("Oops! No Web Worker support.")
+            }
+        }
+
+        function stopC() {
+            w.terminate();
+            w = undefined;
+        }
+
+        function clearC() {
+            document.getElementById("count").innerHTML = ""
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Simple use of Web Worker technique</h1>
+    <br>
+    <p>Count: <span id="count"></span></p> <br>
+    <button onclick="startC()">Start</button>
+    <button onclick="stopC()">Stop</button>
+    <button onclick="clearC()">Clear</button>
+</body>
+
+</html>

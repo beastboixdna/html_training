@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 30px 30px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgb(252, 206, 168);
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        tr:nth-child(3) {
+            background-color: rgb(184, 255, 184);
+        }
+
+        tfoot tr {
+            background-color: rgb(184, 186, 235);
+        }
+
+        tfoot tr td {
+            padding: 5px;
+        }
+
+        tfoot tr td:first-child {
+            text-align: center;
+        }
+
+        tfoot tr td:last-child:hover {
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple HTML Data Table</h1>
+    <br>
+    <table>
+        <caption>Monthly Savings</caption>
+        <thead>
+            <th>Sr. No.</th>
+            <th>Month</th>
+            <th>Money</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>January</td>
+                <td>$306</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>February</td>
+                <td>$216</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>March</td>
+                <td>$333</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>April</td>
+                <td>$108</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>$963</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

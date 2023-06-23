@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl WebStorages</title>
+    <script>
+        if (typeof (Storage) !== "undefined") {
+            window.localStorage.setItem("username", "Shri Krishna")
+            window.sessionStorage.setItem("password", "radharani9")
+        }
+        else {
+            alert("Your Browser does not supports Web Storage!!")
+        }
+
+        function showData() {
+            var data = document.getElementById("data");
+            data.innerHTML = "Username: " + window.localStorage.getItem("username") + "<br>Password: " + window.sessionStorage.getItem("password")
+        }
+    </script>
+</head>
+
+<body>
+    <h1>This is an example of web storage.</h1> <br>
+    <button onclick="showData()">Fetch Data</button>
+    <br>
+    <p><span id="data"></span></p>
+</body>
+
+</html>

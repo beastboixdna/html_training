@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login GitHub</title>
+  </head>
+  <body>
+    <form action="Home_Page.html" id="home_page" method="GET">
+      <p align="center"><b>BB GitHub</b></p>
+      <p id="user_name" align="center">
+        Username:
+        <input type="text" id="user_n" placeholder="Enter username" />
+      </p>
+
+      <p id="user_pass" align="center">
+        Password:
+        <input
+          type="password"
+          id="user_p"
+          placeholder="Enter password"
+          name="psw"
+        />
+      </p>
+
+      <p id="sub_btn" align="center">
+        <button id="login_btn" type="submit" onclick="alerto_io()" class="btn">
+          Login
+        </button>
+      </p>
+
+      <!-- <p id="dna">Hello DNA!!</p> -->
+      <script>
+        function on_roof() {
+          document.getElementById("Home_Page.html");
+        }
+        function alerto_io() {
+          let user_name = document.getElementById("user_n").value;
+          let user_pass = document.getElementById("user_p").value;
+          // let login = document.getElementById("login_btn");
+          if (user_name === "" && user_pass === "") {
+            alert("Please enter Username & Password");
+          } else {
+            on_roof();
+          }
+        }
+        let input_us_name = document.getElementById("user_n");
+        let input_us_pass = document.getElementById("user_p");
+        let input_us_login = document.getElementById("login_btn");
+
+        input_us_name.addEventListener("input", (event) => {
+          if (input_us_name.value === "") {
+            input_us_name.style.backgroundColor = "plum";
+          } else {
+            input_us_name.style.backgroundColor = "peachpuff";
+          }
+        });
+        input_us_pass.addEventListener("input", (event) => {
+          if (input_us_pass.value === "") {
+            input_us_pass.style.backgroundColor = "plum";
+          } else {
+            input_us_pass.style.backgroundColor = "peachpuff";
+          }
+        });
+        input_us_login.addEventListener("onclick", (event) => {
+          input_us_login.style.backgroundColor = "peachpuff";
+        });
+      </script>
+    </form>
+    <!-- </p> -->
+  </body>
+</html>

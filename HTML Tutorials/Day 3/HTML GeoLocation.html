@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML GeoLocation</title>
+
+</head>
+
+<body>
+    <h1>Simple GeoLocation</h1><br>
+    <button onclick="showGeolocation()">Show LatLng</button><br>
+    <p><span id="lat_lng"></span></p>
+
+    <script>
+        var ll = document.getElementById("lat_lng");
+
+        function showGeolocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            }
+            else {
+                ll.innerHTML = "User current location is not found"
+            }
+        }
+
+        function showPosition(position) {
+            ll.innerHTML = "Latitude: " + position.coords.latitude + "<br> Longitude: " + position.coords.longitude;
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    ll.innerHTML = "Your permission is denied.";
+                    break;
+                case error.PERMISSION_UNAVAILABLE:
+                    ll.innerHTML = "Your permission is unavailable.";
+                    break;
+                case error.TIMEOUT:
+                    ll.innerHTML = "Your request timed out.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    ll.innerHTML = "An unknown error occurred.";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

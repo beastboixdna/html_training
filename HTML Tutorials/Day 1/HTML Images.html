@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <style>
+        img {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="https://i.ytimg.com/vi/wa6mYKhiVe0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDb4eI74cMAePteLIRYqqtxa3V-YQ"
+        alt="Sing a New Song Unto The Lord (Hare Krishna Edition)" usemap="#img_id">
+
+    <map name="img_id">
+        <area shape="circle" coords="300, 200, 50" href="https://youtu.be/wa6mYKhiVe0" alt="Song">
+    </map> -->
+
+    <br>
+    <br>
+
+    <picture>
+        <source media="(min-width: 600px)" srcset="../img/HareKrishna.jpg">
+        <source media="(min-width: 500px)" srcset="../img/Krishna.jpg">
+        <img src="https://i.ytimg.com/vi/wa6mYKhiVe0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDb4eI74cMAePteLIRYqqtxa3V-YQ"
+            alt="Sing a New Song Unto The Lord (Hare Krishna Edition)" usemap="#img_id">
+    </picture>
+</body>
+
+</html>

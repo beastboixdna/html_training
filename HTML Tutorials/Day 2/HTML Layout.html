@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            font-size: 30px;
+            background-color: aliceblue;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Container for flex-box */
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        nav {
+            flex: 1;
+            height: 100%;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+
+        li {
+            list-style: none;
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+
+        li:hover {
+            background-color: black;
+        }
+
+        li:hover a {
+            color: white;
+        }
+
+        article {
+            flex: 3;
+            padding: 20px;
+        }
+
+        footer {
+            height: 30px;
+            background-color: rgb(199, 203, 247);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>New Jersey</header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#base">Base</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h3>New jersey</h3>
+            <br>
+            <p>New Jersey is a northeastern U.S. state with some 130 miles of Atlantic coast. Jersey City, across the
+                Hudson River from Lower Manhattan, is the site of Liberty State Park, where ferries embark for nearby
+                Ellis Island, with its historic Immigration Museum, and the iconic Statue of Liberty. The Jersey Shore
+                includes notable resort towns like historic Asbury Park and Cape May, with its preserved Victorian
+                buildings.</p>
+        </article>
+    </section>
+
+    <footer>
+        All copyright and license information in this
+    </footer>
+
+</body>
+
+</html>

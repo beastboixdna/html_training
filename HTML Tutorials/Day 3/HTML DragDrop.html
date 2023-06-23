@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drag & Drop</title>
+    <style>
+        #container {
+            display: flex;
+            width: 500px;
+            height: auto;
+            padding: 2px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        #drop_div1 {
+            width: 200px;
+            height: 258px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        #drop_div2 {
+            width: 200px;
+            padding: 10px;
+            height: 258px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("img", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var ele = ev.dataTransfer.getData("img");
+            ev.target.appendChild(document.getElementById(ele))
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Simple example of drag and drop</h1>
+    <div id="container">
+        <div id="drop_div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="drop_div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+    <img id="drag_img" src="../img/Krishna.jpg" alt="Hare Krishna" draggable="true" ondragstart="drag(event)"
+        width="200" height="auto">
+</body>
+
+</html>

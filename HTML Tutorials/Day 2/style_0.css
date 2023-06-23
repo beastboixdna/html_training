@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: #181a21;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100;
+}
+
+.logo {
+    height: 80px;
+    filter: invert(100%);
+    margin: 1px 1px;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 21px;
+    position: relative;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-family: 'Krona One';
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#navbar ul li ::before {
+    content: "";
+    background: #FFC000;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+#navbar ul li a:hover::before {
+    width: 100%;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* justify-content: space-between; */
+
+}
+
+/* #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100;
+} */
+
+.logo {
+    height: 80px;
+    filter: invert(100%);
+    margin: 1px 1px;
+}
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 21px;
+    position: relative;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-family: 'Krona One';
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#navbar ul li ::before {
+    content: "";
+    background: #FFC000;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+#navbar ul li a:hover::before {
+    width: 100%;
+}
