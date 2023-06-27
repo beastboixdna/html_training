@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    background-color: #bec1fa;
+    text-align: center;
+    margin: 20px;
+    width: max-content;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 20px 0px #eea8f7;
+    position: fixed;
+}
+
+.container {
+    width: 50%;
+    height: max-content;
+    border-radius: 10px;
+    background-color: rgb(227, 240, 146);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    position: relative;
+}
+
+p {
+    height: 30px;
+    width: 70%;
+    padding: 5px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+pre {
+    height: fit-content;
+    /* width: 70%; */
+    padding: 9px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+pre.normal {
+    font: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.oblique {
+    font-style: oblique;
+}
+
+p.normal-weight {
+    font-weight: normal;
+}
+
+p.bold {
+    font-weight: bold;
+}
+
+p.normal-variant {
+    font-variant: normal;
+}
+
+p.small-caps {
+    font-variant: small-caps;
+}
+
+p.normal-size {
+    font-variant: normal
+}
+
+p.user-specified {
+    font: italic small-caps bold 20px/30px Georgia;
+}
