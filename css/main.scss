@@ -209,6 +209,7 @@ body.dark {
     box-shadow: 0 0 13px #eee !important;
     text-decoration: none;
 }
+
 nav.dark {
     background-color: #1f1f1f !important;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
@@ -230,6 +231,7 @@ nav.dark {
                 -webkit-text-fill-color: transparent;
             }
         }
+
         div {
             .navbar-nav {
                 .nav-item {
@@ -327,7 +329,44 @@ nav.dark ~ section div.container-xxl {
     div.card {
     }
 }
+nav.dark ~ .offcanvas {
+    .offcanvas-header {
+        background-color: var(--bs-body-bg) !important;
 
+        h5 {
+            background: #bab3ff;
+            background: repeating-radial-gradient(
+                circle farthest-side at center center,
+                #bab3ff 0%,
+                #bab3ff 25%,
+                #a687d4 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 6px 0px;
+        }
+    }
+    .offcanvas-body {
+        background-color: #1f1f1f !important;
+
+        .offcanvas-para-into {
+            background: #bab3ff;
+            background: repeating-radial-gradient(
+                circle farthest-side at center center,
+                #bab3ff 0%,
+                #bab3ff 25%,
+                #a687d4 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 6px 0px;
+        }
+
+        span.auth-name {
+            color: white;
+        }
+    }
+}
 nav.dark ~ section footer {
     background-color: #1f1f1f !important;
 

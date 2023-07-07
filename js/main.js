@@ -22,11 +22,25 @@ $(document).ready(function () {
             $(".theme-animation-moon").removeClass("show-theme-icon");
             $(".theme-animation-sun").addClass("show-theme-icon");
             $(".navbar").removeClass("dark");
+
+            $(".navbar").removeClass("navbar-dark");
+            $(".navbar").addClass("navbar-light");
+
+            $(".offcanvas .offcanvas-header .btn-close").removeClass("btn-close-white")
+            $(".offcanvas .offcanvas-header .btn-close").addClass("btn-close-dark")
+
             $("body").removeClass("dark");
         } else if (themePreference === "dark") {
             $(".theme-animation-sun").removeClass("show-theme-icon");
             $(".theme-animation-moon").addClass("show-theme-icon");
             $(".navbar").addClass("dark");
+
+            $(".navbar").removeClass("navbar-light");
+            $(".navbar").addClass("navbar-dark");
+
+            $(".offcanvas .offcanvas-header .btn-close").removeClass("btn-close-dark")
+            $(".offcanvas .offcanvas-header .btn-close").addClass("btn-close-white")
+
             $("body").addClass("dark");
         }
     }
