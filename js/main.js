@@ -4,6 +4,9 @@ tooltips.each(function () {
     this.style.cursor = "pointer";
 });
 $(document).ready(function () {
+    $(document).on("contextmenu", function(e) {
+        e.preventDefault();
+      });
     var moon_sun = $(".theme-animation");
     moon_sun.on("click", function () {
         var themePreference = $(this).attr("value");
