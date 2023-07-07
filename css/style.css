@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.more-books {
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+
+a.more-books:hover {
+    font-size: 16.30px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.text-stretch {
+    text-align: justify;
+}
+
+.writer-pic {
+    scale: 1.2;
+}
+
+.reviewer-user,
+.user-pic-rates {
+    cursor: pointer;
+}
+
+.reviewer-rating-stars {
+    margin-left: 3px;
+}
+
+.reviewer-user i:first-child {
+    margin-left: 3px;
+}
+
+.fa-star {
+    padding: 3px;
+    color: gold;
+    transition: all 300ms ease-in-out;
+}
+
+.fa-star {
+    padding: 3px;
+    color: gold;
+    transition: all 300ms ease-in-out;
+}
+
+.stars-rate i[class*="bi-star"] {
+    padding: 3px;
+    color: gold;
+    transition: all 300ms ease-in-out;
+}
+
+.far.fa-star {
+    color: gainsboro;
+}
+
+.stars-rate i[class*="bi-star empty"] {
+    color: gainsboro;
+}
+
+.stars-rate i[class*="star"] {
+    font-size: 16px;
+}
+
+/* .fa-star:hover {
+    font-size: medium;
+}
+
+.stars-rate i[class*="bi-star"]:hover {
+    font-size: medium;
+} */
+
+.user-pic {
+    width: 40px;
+}
+
+.col-rate {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.book-list-container {
+    height: 150px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+/*** Outline CSS starts ***/
+.norm-outline {
+    outline: 2px solid paleturquoise;
+}
+
+/*** Outline CSS ends ***/
+
+
+/* Text styling starts */
+.text-justify {
+    text-align: justify;
+}
+
+/*** Text styling ends ***/
+
+
+/* Image styling starts */
+.profile-pic-small {
+    width: 40px;
+}
+
+.cover-img-xs {
+    width: 340px
+}
+
+/*** Image styling ends ***/
+
+
+/* input fields valid / invalid css starts*/
+.form-control:focus {
+    outline: none !important;
+}
+
+.border-radius {
+    border-radius: 12px !important;
+}
+
+
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+input[type]:valid:focus {
+    outline: 4px solid rgba(109, 253, 119, 0.457) !important;
+}
+
+input[type]:invalid:focus {
+    outline: 4px solid rgba(253, 109, 109, 0.457) !important;
+}
+
+/* .form-control:invalid:focus {
+    outline: 4px solid rgba(253, 109, 109, 0.457) !important;
+} */
+
+/* input fields valid / invalid css ends*/
